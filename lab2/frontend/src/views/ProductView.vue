@@ -16,7 +16,7 @@
 <script>
 import Title from "@/components/ProductPage/Title";
 import LeftMenu from "@/components/Menu/LeftMenu";
-import Product from "@/components/ProductPage/Product";
+import Card from "@/components/ProductPage/Product";
 import Description from "@/components/ProductPage/Description";
 
 export default {

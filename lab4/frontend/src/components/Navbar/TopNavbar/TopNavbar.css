@@ -1,0 +1,28 @@
+.top-navbar {
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.img-wrap img {
+    object-fit: cover;
+    width: 150px;
+    height: 100%;
+}
+
+.search {
+    padding-left: 30px;
+}
+
+.search form {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.call {
+    padding-left: 30px;
+}
+
+.img-icon {
+    cursor: pointer;
+}
+

@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import Product from "@/components/HomePage/Product";
+import Card from "@/components/HomePage/Product";
 
 export default {
   name: "CatalogProduct",

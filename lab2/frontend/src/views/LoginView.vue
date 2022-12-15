@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import Form from "@/components/LoginPage/Form";
+import LoginForm from "@/components/LoginPage/Form";
 import ImageBrand from "@/components/LoginPage/ImageBrand";
 
 export default {

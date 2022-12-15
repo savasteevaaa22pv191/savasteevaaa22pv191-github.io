@@ -1,0 +1,15 @@
+.description {
+    margin: 5% 5% 5% 5%;
+}
+
+.description .title {
+    font-size: x-large;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.description .content {
+    padding: 1% 4% 4% 0;
+    font-family: "Gill Sans";
+    font-size: large;
+}
