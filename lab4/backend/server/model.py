@@ -1,4 +1,5 @@
 import sqlalchemy as sa
+from sqlalchemy import select
 from sqlalchemy.ext.declarative import declarative_base
 from os import environ
 
@@ -23,6 +24,34 @@ class Tea(Base):
 
 tea_table = Tea.__table__
 
+class TeaData:
+    def __init__(self, name: str,  image: str, rating: int, number: int,
+    price: int, description: str, characteristic: str):
+        self.name: str = name
+        self.image:  str = image
+        self.rating: int = rating
+        self.number: int = number
+        self.price: int = price
+        self.description: str = description
+        self.characteristic: str = characteristic
+
+    def create_dict_from_task(self):
+        return {
+            'name': self.name,
+            'image': self.image,
+            'rating': self.rating,
+            'number': self.number,
+            'price': self.price,
+            'description': self.description,
+            'characteristic': self.characteristic
+        }
+
+tea_list: list[TeaData]=[
+    TeaData('Зеленый чай', 'tovar3.jpg', 0, 0, 0, 'зеленый чай', 'зеленый чай'),
+    TeaData('Черный чай', 'tovar2.jpg', 1, 5, 200, 'зеленый чай', 'зеленый чай'),
+    TeaData('Шаулинь', 'tovar1.jpg', 3, 10, 350, 'зеленый чай', 'зеленый чай')
+
+]
 
 class User(Base):
     __tablename__ = "users"
@@ -44,3 +73,15 @@ class Cart(Base):
 cart_table = Cart.__table__
 
 Base.metadata.create_all(bind=engine, tables=[cart_table, tea_table, user_table])
+
+def fill_teas():
+    engine.execute(
+        tea_table.insert(),
+        [tea.create_dict_from_task() for tea in tea_list]
+    )
+with engine.connect() as connection:
+    s = select(tea_table)
+    result = connection.execute(s)
+    items_number = len([row for row in result])
+    if items_number != len(tea_list):
+        fill_teas()

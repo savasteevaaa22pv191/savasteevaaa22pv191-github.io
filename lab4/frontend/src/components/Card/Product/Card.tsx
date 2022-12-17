@@ -7,8 +7,10 @@ import Status from "../Status/Status";
 import Price from "../Price/Price";
 import Rating from "../Rating/Rating";
 import LeftMenu from "../../Menu/LeftMenu/LeftMenu";
+import Tea from "../../../models/Product";
 
-function Card() {
+function Card(tea: Tea) {
+    const basePath = '../../../images/product-icon/'
     const navigate: NavigateFunction = useNavigate();
 
     return (

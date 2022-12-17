@@ -19,38 +19,19 @@ def helloWorld():
 
 @app.route("/teas")
 def teas():
-  import urllib
-  output = []
-  for rule in app.url_map.iter_rules():
-
-    options = {}
-    for arg in rule.arguments:
-      options[arg] = "[{0}]".format(arg)
-
-    methods = ','.join(rule.methods)
-    url = url_for(rule.endpoint, **options)
-    line = urllib.parse.unquote("{:50s} {:20s} {}".format(rule.endpoint, methods, url))
-    output.append(line)
-
-  for line in sorted(output):
-    print(line)
   return json.jsonify(get_teas())
 
-@app.route("/test")
+@app.route("/add-to-card", methods=['POST'])
 @jwt_required()
 def test():
-  return current_identity
+  return Response(response="OK", status=200)
 
-
-@app.route("/authorization", methods= ['GET'])
-def authorization():
-  return json.jsonify(__authorization__())
 
 @app.route("/registration", methods= ['POST'])
 def registration():
   res= __registration__()
   if res is None:
-    return Response(response="FU", status=401)
+    return Response(response="can't do registration", status=401)
   response = json.jsonify(res)
   response.status=201
   return response

@@ -19,13 +19,13 @@ function SignupForm(props: any) {
         <>
             <form className="col-7" method="post">
                 <div className="wrap-input validate-input">
-                    <input className="input-100" name="email" type="text" placeholder="Email" onChange={evt=>props.email(evt)}>
+                    <input className="input-100" name="email" type="email" placeholder="Email" onChange={evt=>props.email(evt)}>
                         {/*<div className=""></div>*/}
                     </input>
                 </div>
 
                 <div className="wrap-input validate-input">
-                    <input className="input-100" name="password" type="password" placeholder="Login" onChange={evt=>props.login(evt)}>
+                    <input className="input-100" name="password" type="text" placeholder="Login" onChange={evt=>props.login(evt)}>
                         {/*<div className="errors"></div>*/}
                     </input>
                 </div>

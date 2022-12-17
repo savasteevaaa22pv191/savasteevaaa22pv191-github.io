@@ -4,28 +4,54 @@ import LeftMenu from "../../components/Menu/LeftMenu/LeftMenu";
 import HomePresent from "../../components/Home/HomePresent/HomePresent";
 import CatalogImgCard from "../../components/Catalog/CatalogImgCard/CatalogImgCard";
 import TopMenu from "../../components/Menu/TopMenu/TopMenu";
+import {Simulate} from "react-dom/test-utils";
+import contextMenu = Simulate.contextMenu;
+import Tea from "../../models/Product";
+import {getTeas} from "../../api/productApi";
+import CatalogProduct from "../../components/Catalog/CatalogProduct/CatalogProduct";
+import Footer from "../../components/Main/Footer/Footer";
 
 function Home() {
+    const basePath = '../../images/product-icon/'
+    const [teas, setTeas] = React.useState<Tea[]>([]);
+
+    console.log(teas)
+
+    React.useEffect(() => {
+
+            const get_teas = async () => {
+                const teasData: Tea[] | null = await getTeas();
+                if(teasData !== null){
+                    setTeas(teasData)
+                }
+
+            }
+            get_teas()
+        },
+
+        []
+    );
 
     return (
         <>
             <Header />
             <div className="container d-flex flex-row mt-2 row">
-                <LeftMenu></LeftMenu>
+                <LeftMenu/>
 
                 <div className="content d-flex flex-column col-md-9">
-                    <HomePresent></HomePresent>
+                    <HomePresent/>
 
-                    <CatalogImgCard></CatalogImgCard>
+                    <CatalogImgCard/>
 
 
                     <div className="d-flex flex-column">
-                        <TopMenu></TopMenu>
-                        {/*<CatalogProduct></CatalogProduct>*/}
+                        <TopMenu/>
+                        <CatalogProduct data={teas}/>
                     </div>
 
                 </div>
             </div>
+            <Footer/>
         </>
     );
 }

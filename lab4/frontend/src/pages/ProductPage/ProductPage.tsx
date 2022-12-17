@@ -23,7 +23,7 @@ function ProductPage() {
                     <LeftMenu></LeftMenu>
 
                     <div className="content d-flex flex-column col-md-9">
-                        <Card></Card>
+
                         <Description></Description>
                     </div>
 

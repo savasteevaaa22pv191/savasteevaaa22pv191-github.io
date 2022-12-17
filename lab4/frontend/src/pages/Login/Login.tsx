@@ -5,6 +5,7 @@ import LoginForm from "../../components/LoginForm/LoginForm";
 import './Login.css'
 import {NavigateFunction, useNavigate} from "react-router-dom";
 import {authentication} from "../../api/authApi";
+import {Errors} from "./Errors";
 
 interface User {
     access_token: string
@@ -25,6 +26,7 @@ function Login() {
             ["password", false]
         ]);
     const [errors, setErrors] = React.useState<Map<string, boolean>>(er);
+    const [errors_, setErrors_] = React.useState<Errors>({passwordHasError:false, emailHasError:false});
 
     const [user, setUser] = React.useState<User>({ access_token: ''});
     const params: LoginParams = {
@@ -49,19 +51,18 @@ function Login() {
         console.log("Я умираю")
         event.preventDefault()
 
-        /*for (let errorsKey in errors) {
-            errors.set(errorsKey, false)
+        for (let errorsKey in errors) {
+            setErrors(errors.set(errorsKey, false))
         }
         if (email.trim().length === 0) {
-            errors.set(email, true)
-            console.log(errors.get("email"))
+
+            setErrors(errors.set('email', true))
+            console.log(errors)
         }
         if (password.trim().length === 0) {
-            errors.set(password, true)
             console.log(errors.get("password"))
-        }*/
-
-        /*setErrors(new Map(errors))*/
+            setErrors(errors.set('password', true))
+        }
 
         if (email !== '' && password !== '') {
             const result: User = await authentication(email, password);
@@ -90,7 +91,7 @@ function Login() {
                     <div className="col-12 d-flex flex-column justify-content-center align-items-center">
                         <div className="title-login">Вход</div>
 
-                        <LoginForm click={handleSubmit} email={handleEmail} password={handlePassword}/>
+                        <LoginForm click={handleSubmit} params={params}/>
 
                         <div className="registration-block">
                             Нет аккаунта?

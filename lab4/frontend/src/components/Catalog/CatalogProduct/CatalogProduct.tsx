@@ -1,25 +1,26 @@
 import React from "react";
+import Tea from "../../../models/Product";
+import Product from "../../Home/Product/Product";
 
-function CatalogProduct() {
+interface TeasData {
+    data: Tea[]
+}
 
-    /*return (
+function CatalogProduct(teas: TeasData) {
+    console.log(teas)
+    const cardComponents: JSX.Element[] = teas.data.map<JSX.Element>(tea => <Product key={tea.id} {...tea} />);
+
+    return (
         <>
-        <div>
-            <div className="d-flex flex-column">
-                <div className="d-flex flex-row flex-wrap">
-                    <div className="col-lg-4 col-md-6 col-sm-12 col-xs-12" v-for="product in listProduct">
-                        <Card :title=product.name
-                        :price=product.price
-                        :image=product.image
-                        :status=product.status
-                        :rating=product.rating>
-                    </Card>
+            <div>
+                <div className="d-flex flex-column">
+                    <div className="d-flex flex-row flex-wrap">
+                        {cardComponents}
+                    </div>
                 </div>
             </div>
-        </div>
-        </div>
-            </>
-    );*/
+        </>
+    );
 }
 
 export default CatalogProduct;

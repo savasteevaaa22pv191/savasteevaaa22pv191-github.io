@@ -4,7 +4,13 @@ import image from '../../images/brand-icon/signup.jpg'
 import './Signup.css'
 import SignupForm from "../../components/SignupForm/SignupForm";
 import {NavigateFunction, useNavigate} from "react-router-dom";
-import {authentication} from "../../api/authApi";
+import {authentication, registration} from "../../api/authApi";
+import Tea from "../../models/Product";
+import {getTeas} from "../../api/productApi";
+
+interface User {
+    access_token: string
+}
 
 function Signup() {
     const navigate: NavigateFunction = useNavigate();
@@ -12,6 +18,33 @@ function Signup() {
     const [password, setPassword] = React.useState<string>('');
     const [login, setLogin] = React.useState<string>('');
     const [errors, setErrors] = React.useState<string>('');
+    const [regRes, setRegRes] = React.useState<boolean>(false);
+    const [user, setUser] = React.useState<User>({ access_token: ''});
+
+    React.useEffect(() => {
+            if(user.access_token === ''){
+                return;
+            }
+            localStorage.setItem('token', user.access_token);
+            navigate('/')
+        },
+        // eslint-disable-next-line
+        [user]
+    );
+
+    React.useEffect(() => {
+        if(!regRes){
+            return;
+        }
+            const auth = async () => {
+                const result: User = await authentication(email, password);
+                setUser((oldData: Object) => ({ ...oldData, ...result }))
+            }
+            auth()
+        },
+
+        [regRes]
+    );
 
     function handleEmail(event: any) {
         event.preventDefault()
@@ -41,10 +74,12 @@ function Signup() {
             errors.set(password, 'Заполните Пароль.')
         }*/
 
-        /*if (email !== '' && password !== '') {
-            const result: User = await authentication(email, password);
-            setUser((oldData: Object) => ({ ...oldData, ...result }))
-        }*/
+        if (email !== '' && password !== '' && login !=='') {
+            const result: boolean|null = await registration(email, password, login);
+            if(result !== null){
+                setRegRes(result)
+            }
+        }
     };
 
 

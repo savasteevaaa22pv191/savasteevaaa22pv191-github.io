@@ -2,22 +2,22 @@ import React from "react";
 import './LoginForm.css'
 
 function LoginForm(props: any) {
-
+    console.log(props)
     return (
         <>
             <form className="col-7" method="post">
                 <div className="wrap-input validate-input">
                     <input className="input-100" name="email" type="text" placeholder="Email"
-                           onChange={evt => props.email(evt)}>
+                           onChange={evt => props.params.email(evt)}>
                     </input>
-                    {/*{props.params.errors.get("email")===true && <div className="errors">Заполните Email</div>}*/}
+                    {props.params.errors.get("email") && <div className="errors">Заполните Email</div>}
                 </div>
 
                 <div className="wrap-input validate-input">
                     <input className="input-100" name="password" type="password" placeholder="Password"
-                           onChange={evt => props.password(evt)}>
+                           onChange={evt => props.params.password(evt)}>
                     </input>
-                    {/*{props.params.errors.get("password")===true && <div className="errors">Заполните Пароль</div>}*/}
+                    {props.params.errors.get("password") && <div className="errors">Заполните Пароль</div>}
                 </div>
 
                 <div className="container-login100-btn">

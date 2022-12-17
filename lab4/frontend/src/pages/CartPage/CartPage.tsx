@@ -23,7 +23,7 @@ function CartPage() {
                     <LeftMenu></LeftMenu>
 
                     <div className="content d-flex flex-column col-md-9">
-                        <Card></Card>
+
                     </div>
 
                 </div>

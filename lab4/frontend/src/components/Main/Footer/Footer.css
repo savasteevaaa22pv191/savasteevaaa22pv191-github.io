@@ -1,0 +1,13 @@
+footer {
+    margin-top: 40px;
+    padding: 15px;
+    color: #faf0e6 !important;
+    height: 100px;
+}
+
+footer .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
