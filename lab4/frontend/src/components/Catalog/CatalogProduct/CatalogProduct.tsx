@@ -1,6 +1,6 @@
 import React from "react";
-import Tea from "../../../models/Product";
-import Product from "../../Home/Product/Product";
+import Tea from "../../../models/Tea";
+import Product from "../../../pages/Home/components/Product/Product";
 
 interface TeasData {
     data: Tea[]

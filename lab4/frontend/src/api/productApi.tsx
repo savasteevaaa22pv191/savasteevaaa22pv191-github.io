@@ -1,8 +1,5 @@
 import Axios, {AxiosError} from "axios";
 
-const historyPath: string = 'http://localhost:8080/products';
-
-
 export async function getTeas() {
     /*const token = localStorage.getItem('token')*/
     return Axios.get('http://localhost:8080/teas',

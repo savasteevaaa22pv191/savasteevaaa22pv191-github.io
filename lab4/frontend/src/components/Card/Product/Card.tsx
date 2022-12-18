@@ -1,13 +1,13 @@
 import React from "react";
 import {useNavigate, NavigateFunction, Link} from "react-router-dom";
 import "./Card.css"
-import image from '../../../images/product-icon-full/tovar.jpg'
+import image from '../../../images/product-icon-full/tovar1.jpg'
 import Counter from "../Counter/Counter";
 import Status from "../Status/Status";
 import Price from "../Price/Price";
 import Rating from "../Rating/Rating";
 import LeftMenu from "../../Menu/LeftMenu/LeftMenu";
-import Tea from "../../../models/Product";
+import Tea from "../../../models/Tea";
 
 function Card(tea: Tea) {
     const basePath = '../../../images/product-icon/'

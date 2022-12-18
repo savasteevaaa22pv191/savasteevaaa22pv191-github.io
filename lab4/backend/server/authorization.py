@@ -44,8 +44,8 @@ def identity(payload):
 
     user_id = payload['identity']
     print(payload)
+    return user_id
 
-    return "PIDOR"
 """
 def __authorization__():
     result = select_from_table(select(tea_table))

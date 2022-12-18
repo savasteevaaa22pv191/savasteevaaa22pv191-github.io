@@ -3,7 +3,7 @@ import {useNavigate, NavigateFunction, Link} from "react-router-dom";
 import './Description.css'
 
 
-function Description() {
+function Description(props: any) {
     const navigate: NavigateFunction = useNavigate();
 
     return (
@@ -13,10 +13,7 @@ function Description() {
                     <div className="title">Описание</div>
 
                     <div className="content">
-                        Тут какой-то текст
-                        {/*<div v-for="text in description">
-                            <div>{{text}}</div>
-                        </div>*/}
+                        {props.description}
                     </div>
                 </div>
 
@@ -24,10 +21,7 @@ function Description() {
                     <div className="title">Характеристики</div>
 
                     <div className="content">
-                        Тут какой-то текст
-                        {/*<div v-for="text in character">
-                            <div>{{text}}</div>
-                        </div>*/}
+                        {props.characteristic}
                     </div>
                 </div>
 

@@ -5,7 +5,7 @@ import './Signup.css'
 import SignupForm from "../../components/SignupForm/SignupForm";
 import {NavigateFunction, useNavigate} from "react-router-dom";
 import {authentication, registration} from "../../api/authApi";
-import Tea from "../../models/Product";
+import Tea from "../../models/Tea";
 import {getTeas} from "../../api/productApi";
 
 interface User {

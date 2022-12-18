@@ -1,5 +1,5 @@
 import React from "react";
-import '../LoginForm/LoginForm.css'
+import '../../pages/Login/components/Form/Form.css'
 
 function SignupForm(props: any) {
 

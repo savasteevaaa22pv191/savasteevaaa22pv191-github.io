@@ -1,7 +1,7 @@
 
 import React from "react";
 import image from '../../images/brand-icon/login.jpg'
-import LoginForm from "../../components/LoginForm/LoginForm";
+import Form from "./components/Form/Form";
 import './Login.css'
 import {NavigateFunction, useNavigate} from "react-router-dom";
 import {authentication} from "../../api/authApi";
@@ -66,6 +66,7 @@ function Login() {
 
         if (email !== '' && password !== '') {
             const result: User = await authentication(email, password);
+
             setUser((oldData: Object) => ({ ...oldData, ...result }))
         }
     };
@@ -91,7 +92,7 @@ function Login() {
                     <div className="col-12 d-flex flex-column justify-content-center align-items-center">
                         <div className="title-login">Вход</div>
 
-                        <LoginForm click={handleSubmit} params={params}/>
+                        <Form click={handleSubmit} params={params}/>
 
                         <div className="registration-block">
                             Нет аккаунта?

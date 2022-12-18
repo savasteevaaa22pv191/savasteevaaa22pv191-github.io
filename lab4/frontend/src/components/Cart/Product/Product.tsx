@@ -1,5 +1,5 @@
 import React from "react";
-import Tea from "../../../models/Product";
+import Tea from "../../../models/Tea";
 import {NavigateFunction, useNavigate} from "react-router-dom";
 import image from '../../../images/product-icon/tovar3.jpg'
 import './Product.css'
@@ -11,7 +11,9 @@ function Product(tea: Tea) {
 
     return (
         <>
-            <div className="col-md-6 col-lg-4 mb-3 card card-product">
+            <div className="col-md-6 col-lg-4 mb-3 card card-product" onClick={event => navigate('/product', {
+                state: {tea: tea}
+            })}>
                 <div className="product-box justify-content-center">
                     <div className="d-inline-flex">
                         <img src={require(`../../../images/product-icon/${tea.image}`)}/>
@@ -32,29 +34,6 @@ function Product(tea: Tea) {
                 </div>
             </div>
         </>);
-    /*<>
-        <div className="flex-row">
-            <div className="card card-product col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                <div className="product-box justify-content-center">
-                    <div className="d-inline-flex">
-                        <img src={image}/>
-                    </div>
-
-                    <div className="d-inline-flex text-box">
-                        <div>{tea.name}</div>
-                    </div>
-                    <Rating rating={3}/>
-                    <Rating v-bind:rating=rating></Rating>
-            <Status v-bind:status="status"></Status>
-
-                    <Price v-bind:price="price"></Price>
-
-
-                </div>
-            </div>
-        </div>
-    </>
-);*/
 }
 
 export default Product;

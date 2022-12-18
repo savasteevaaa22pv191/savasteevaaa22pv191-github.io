@@ -1,5 +1,6 @@
 .card-product:hover{
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 .product-box {

@@ -8,6 +8,10 @@ import "./TopNavbar.css"
 
 function TopNavbar() {
     const navigate: NavigateFunction = useNavigate();
+    let linkToCart: string = '/login';
+    if (localStorage.getItem('token') !== '' && localStorage.getItem('token') !== null) {
+        linkToCart = '/cart';
+    }
 
     return (
         <>
@@ -38,10 +42,10 @@ function TopNavbar() {
                             <img className="img-icon" src={lock} onClick={event => navigate('/login')}/>
 
 
-                            <img className="img-icon" src={heart} onClick={event => navigate('/product')}/>
+                            <img className="img-icon" src={heart}/>
 
 
-                            <img className="img-icon" src={cart} onClick={event => navigate('/cart')}/>
+                            <img className="img-icon" src={cart} onClick={event => navigate(linkToCart)}/>
 
                         </div>
                     </div>

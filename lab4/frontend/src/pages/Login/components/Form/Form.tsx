@@ -1,7 +1,7 @@
 import React from "react";
-import './LoginForm.css'
+import './Form.css'
 
-function LoginForm(props: any) {
+function Form(props: any) {
     console.log(props)
     return (
         <>
@@ -28,4 +28,4 @@ function LoginForm(props: any) {
     );
 }
 
-export default LoginForm;
+export default Form;

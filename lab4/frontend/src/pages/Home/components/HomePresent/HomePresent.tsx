@@ -1,5 +1,5 @@
 import React from "react";
-import banner from "../../../images/brand-icon/tea-banner.jpg"
+import banner from "../../../../images/brand-icon/tea-banner.jpg"
 import './HomePresent.css'
 
 function HomePresent() {

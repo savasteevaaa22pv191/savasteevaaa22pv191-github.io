@@ -26,7 +26,7 @@ export default {
     return {
       product: {
         title: "Шаулинь",
-        image: "/images/product-icon-full/tovar.jpg",
+        image: "/images/product-icon-full/tovar1.jpg",
         status: "Достаточно",
         rating: -1,
         price: "400"

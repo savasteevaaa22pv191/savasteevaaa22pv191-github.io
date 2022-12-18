@@ -1,6 +1,17 @@
-import React from "react";
+import React, {useState} from "react";
 
 function Counter() {
+    const [count, setCount] = useState(1);
+
+    function increment() {
+        setCount(count + 1)
+    }
+
+    function decrement() {
+        if (count > 1) {
+            setCount(count - 1)
+        }
+    }
 
     return (
         <>
@@ -11,16 +22,15 @@ function Counter() {
                         <div className="col-sm-4 col-xs-4 col-md-5 col-lg-5">
                             <div className="input-group mb-4">
                                 <div className="input-group-prepend">
-                                    <button className="btn btn-dark btn-sm" id="minus-btn" ><i
-                                        className="fa fa-minus"></i></button>
+                                    <button className="btn btn-dark btn-sm" id="minus-btn"><i
+                                        className="fa fa-minus" onClick={decrement}></i></button>
                                 </div>
-                                <input className="counter-input form-control form-control-sm" type="number" id="count_input"
-                                        value="1" min="1">
-                                    <div className="input-group-prepend">
-                                        <button className="btn btn-dark btn-sm"  id="plus-btn"><i
-                                            className="fa fa-plus"></i></button>
-                                    </div>
-                                </input>
+                                <input type="number" id="count_input"
+                                       className="form-control form-control-sm" value={count}/>
+                                <div className="input-group-prepend">
+                                    <button className="btn btn-dark btn-sm"><i
+                                        className="fa fa-plus" onClick={increment}></i></button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -30,7 +40,7 @@ function Counter() {
             </div>
 
         </>
-);
+    );
 }
 
 export default Counter;

@@ -1,9 +1,10 @@
-from flask import Flask, url_for
+from flask import Flask, url_for, request
 from flask_cors import CORS
 import flask.json as json
 from flask import Response
 from flask_jwt import JWT, jwt_required, current_identity
 from authorization import __registration__, check_user, identity
+from cart import get_teas_from_cart, __add_to_cart__
 from tea import get_teas
 
 app = Flask(__name__)
@@ -21,9 +22,23 @@ def helloWorld():
 def teas():
   return json.jsonify(get_teas())
 
-@app.route("/add-to-card", methods=['POST'])
+@app.route("/cart")
 @jwt_required()
-def test():
+def cart():
+  print("current identity", current_identity)
+  return json.jsonify(get_teas_from_cart(str(current_identity)))
+
+
+@app.route("/cart", methods=['POST'])
+@jwt_required()
+def add_to_cart():
+  data = request.get_json()
+  result = __add_to_cart__(data.get("id_tea"), data.get("count_tea"), str(current_identity))
+  print(result)
+
+  if result is None:
+    return Response(response="Товар не добавлен", status=400)
+
   return Response(response="OK", status=200)
 
 
