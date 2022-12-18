@@ -1,17 +1,6 @@
 import React, {useState} from "react";
 
-function Counter() {
-    const [count, setCount] = useState(1);
-
-    function increment() {
-        setCount(count + 1)
-    }
-
-    function decrement() {
-        if (count > 1) {
-            setCount(count - 1)
-        }
-    }
+function Counter(props: any) {
 
     return (
         <>
@@ -23,13 +12,13 @@ function Counter() {
                             <div className="input-group mb-4">
                                 <div className="input-group-prepend">
                                     <button className="btn btn-dark btn-sm" id="minus-btn"><i
-                                        className="fa fa-minus" onClick={decrement}></i></button>
+                                        className="fa fa-minus" onClick={props.counter.decrement}></i></button>
                                 </div>
                                 <input type="number" id="count_input"
-                                       className="form-control form-control-sm" value={count}/>
+                                       className="form-control form-control-sm" value={props.counter.count}/>
                                 <div className="input-group-prepend">
                                     <button className="btn btn-dark btn-sm"><i
-                                        className="fa fa-plus" onClick={increment}></i></button>
+                                        className="fa fa-plus" onClick={props.counter.increment}></i></button>
                                 </div>
                             </div>
                         </div>

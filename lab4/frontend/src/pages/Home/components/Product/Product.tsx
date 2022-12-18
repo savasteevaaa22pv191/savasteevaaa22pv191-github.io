@@ -29,7 +29,7 @@ function Product(tea: Tea) {
                         <Rating rating={tea.rating}/>
                     </div>
 
-                    <Status count={4}/>
+                    <Status count={tea.number}/>
 
                     <div className="price">{tea.price} Р/ш</div>
 

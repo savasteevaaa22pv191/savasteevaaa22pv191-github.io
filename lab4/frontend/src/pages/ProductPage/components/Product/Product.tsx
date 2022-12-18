@@ -32,8 +32,8 @@ function Product(props: any) {
                         <div className="title">{props.tea.name}</div>
                         <div className="price">{props.tea.price} Р/шт.</div>
 
-                        <Status count={props.tea.count}/>
-                        <Counter/>
+                        <Status count={props.tea.number}/>
+                        <Counter counter={props.counter}/>
 
                         <div>
                             <button className="btn btn-dark submit" onClick={evt => props.click(evt)}>В корзину</button>

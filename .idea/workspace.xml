@@ -1,56 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8001d63c-d18f-4efa-8366-bb60ea6d8b20" name="Changes" comment="all teas and registration">
-      <change afterPath="$PROJECT_DIR$/lab4/frontend/src/api/cartApi.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab4/frontend/src/components/Cart/Product/Product.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab4/frontend/src/components/Cart/Product/Product.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab4/frontend/src/images/product-icon-full/tovar1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab4/frontend/src/images/product-icon-full/tovar2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab4/frontend/src/images/product-icon-full/tovar3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab4/frontend/src/pages/CartPage/CartPage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab4/frontend/src/pages/CartPage/components/Menu/Menu.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab4/frontend/src/pages/CartPage/components/Menu/Menu.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab4/frontend/src/pages/CartPage/components/Order/Order.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab4/frontend/src/pages/CartPage/components/Order/Order.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab4/frontend/src/pages/CartPage/components/Product/Product.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab4/frontend/src/pages/CartPage/components/Product/Product.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab4/frontend/src/pages/ProductPage/components/Product/Product.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab4/frontend/src/pages/ProductPage/components/Product/Product.tsx" afterDir="false" />
+    <list default="true" id="8001d63c-d18f-4efa-8366-bb60ea6d8b20" name="Changes" comment="add to cart api">
+      <change afterPath="$PROJECT_DIR$/lab4/frontend/src/pages/CartPage/components/CatalogOrder/CatalogOrder.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/frontend/src/pages/CartPage/components/CatalogOrder/CatalogOrder.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2/frontend/src/views/LoginView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/frontend/src/views/LoginView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2/frontend/src/views/ProductView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/frontend/src/views/ProductView.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab4/backend/server/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/backend/server/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/backend/server/authorization.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/backend/server/authorization.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab4/backend/server/cart.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/backend/server/cart.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/backend/server/database_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/backend/server/database_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/backend/server/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/backend/server/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/frontend/src/api/productApi.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/src/api/productApi.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab4/frontend/src/components/Card/Counter/Counter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/src/components/Card/Counter/Counter.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/frontend/src/components/Card/Description/Description.css" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/src/pages/ProductPage/components/Description/Description.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/frontend/src/components/Card/Description/Description.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/src/pages/ProductPage/components/Description/Description.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/frontend/src/components/Card/Product/Card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/src/components/Card/Product/Card.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/frontend/src/components/Catalog/CatalogProduct/CatalogProduct.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/src/components/Catalog/CatalogProduct/CatalogProduct.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/frontend/src/components/Home/HomePresent/HomePresent.css" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/src/pages/Home/components/HomePresent/HomePresent.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/frontend/src/components/Home/HomePresent/HomePresent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/src/pages/Home/components/HomePresent/HomePresent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/frontend/src/components/Home/ImageBrand/ImageBrand.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/src/pages/Home/components/ImageBrand/ImageBrand.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/frontend/src/components/Home/Product/Product.css" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/src/pages/Home/components/Product/Product.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/frontend/src/components/Home/Product/Product.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/src/pages/Home/components/Product/Product.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/frontend/src/components/Home/Title/Title.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/src/pages/Home/components/Title/Title.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/frontend/src/components/LoginForm/LoginForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/src/pages/Login/components/Form/Form.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/frontend/src/components/LoginForm/LoginForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/src/pages/Login/components/Form/Form.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab4/frontend/src/components/Navbar/TopNavbar/TopNavbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/src/components/Navbar/TopNavbar/TopNavbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/frontend/src/components/SignupForm/SignupForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/src/components/SignupForm/SignupForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/frontend/src/images/product-icon-full/tovar.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/frontend/src/images/product-icon/tovar1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/src/images/product-icon/tovar1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/frontend/src/images/product-icon/tovar2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/src/images/product-icon/tovar2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/frontend/src/images/product-icon/tovar3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/src/images/product-icon/tovar3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/frontend/src/models/Product.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/src/models/Tea.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/frontend/src/pages/CartPage/CartPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/src/pages/CartPage/CartPage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab4/frontend/src/pages/CartPage/CartPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/src/pages/CartPage/CartPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/frontend/src/pages/Home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/src/pages/Home/Home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/frontend/src/pages/Login/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/src/pages/Login/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/frontend/src/pages/CartPage/components/Order/Order.css" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/src/pages/CartPage/components/Order/Order.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/frontend/src/pages/CartPage/components/Order/Order.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/src/pages/CartPage/components/Order/Order.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/frontend/src/pages/CartPage/components/Product/Product.css" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/src/models/OrderTea.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/frontend/src/pages/CartPage/components/Product/Product.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/frontend/src/pages/Home/components/Product/Product.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/src/pages/Home/components/Product/Product.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab4/frontend/src/pages/ProductPage/ProductPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/src/pages/ProductPage/ProductPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/frontend/src/pages/Signup/Signup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/src/pages/Signup/Signup.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/frontend/src/pages/ProductPage/components/Product/Product.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/src/pages/ProductPage/components/Product/Product.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,8 +31,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript File" />
-        <option value="TypeScript JSX File" />
         <option value="CSS File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -130,7 +97,7 @@
       <workItem from="1671032094925" duration="6780000" />
       <workItem from="1671122409115" duration="164000" />
       <workItem from="1671122844369" duration="69763000" />
-      <workItem from="1671363391373" duration="3370000" />
+      <workItem from="1671363391373" duration="13625000" />
     </task>
     <task id="LOCAL-00001" summary="lab2">
       <created>1667938447614</created>
@@ -153,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671274999608</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add to cart api">
+      <created>1671368204948</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1671368204948</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,6 +160,7 @@
     <MESSAGE value="lab2" />
     <MESSAGE value="jwt token" />
     <MESSAGE value="all teas and registration" />
-    <option name="LAST_COMMIT_MESSAGE" value="all teas and registration" />
+    <MESSAGE value="add to cart api" />
+    <option name="LAST_COMMIT_MESSAGE" value="add to cart api" />
   </component>
 </project>

@@ -5,41 +5,43 @@ import image from '../../../../images/product-icon/tovar1.jpg'
 import Tea from "../../../../models/Tea";
 import Status from "../../../../components/Card/Status/Status";
 import Rating from "../../../../components/Card/Rating/Rating";
+import OrderTea from "../../../../models/OrderTea";
 
-function Order(order: any) {
+
+function Order(order: OrderTea) {
     const navigate: NavigateFunction = useNavigate();
 
     return (
         <>
-            <div className="flex-row">
-                <div className="col-12 d-flex d-inline-box">
-                    <div className="col-2">
-                        <img className="order-img" src={image}/>
+
+            <div className="flex-row order-box col-12">
+                <div className="col-12 d-flex d-inline-box order-menu">
+                    <div className="col-2 item">
+                        <img className="order-img" src={require(`../../../../images/product-icon/${order.image}.jpg`)}/>
                     </div>
 
 
-                    <div className="d-flex col-4 justify-content-center align-items-center">
-                        <div className="d-flex flex-column col-12">
-                            <a>Чай и кофе</a>
+                    <div className=" col-4 order-title-box">
+                        <div className="d-flex flex-column col-4 order-font">
+                            <a>{order.name}</a>
                         </div>
                     </div>
 
-                    <div className="d-flex col-2 justify-content-center align-items-center">
-                        <div className="d-flex flex-column col-12">
-                            <a>500 К</a>
+                    <div className="col-2 item">
+                        <div className="d-flex order-title order-font">
+                            <a>{order.price} Р.</a>
                         </div>
                     </div>
 
-                    <div className="d-flex col-2 justify-content-center align-items-center">
-                        <div className="d-flex flex-column col-12">
-                            <a>5 шт.</a>
+                    <div className="col-2 item">
+                        <div className="d-flex order-font">
+                            <a>{order.number} шт.</a>
                         </div>
                     </div>
 
-
-                    <div className="d-flex col-2 justify-content-center align-items-center">
-                        <div className="d-flex flex-column col-12">
-                            <a>1200 К</a>
+                    <div className="col-2 item">
+                        <div className="d-flex flex-column order-font">
+                            <a>{order.price * order.number} Р.</a>
                         </div>
                     </div>
                 </div>

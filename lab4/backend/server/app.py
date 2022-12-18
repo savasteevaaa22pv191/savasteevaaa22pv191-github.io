@@ -33,8 +33,8 @@ def cart():
 @jwt_required()
 def add_to_cart():
   data = request.get_json()
+  print("count tea", data.get("count_tea"))
   result = __add_to_cart__(data.get("id_tea"), data.get("count_tea"), str(current_identity))
-  print(result)
 
   if result is None:
     return Response(response="Товар не добавлен", status=400)

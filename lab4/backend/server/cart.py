@@ -7,13 +7,14 @@ from model import cart_table, TeaData, tea_table
 def get_teas_from_cart(user: str):
     print(type(cart_table.c.user_id))
     print(type(user))
-    res = select_from_table(select(tea_table).join_from(cart_table, tea_table, cart_table.c.tea_id == tea_table.c.id)
+    res = select_from_table(select(tea_table, cart_table.c.number).join_from(cart_table, tea_table, cart_table.c.tea_id == tea_table.c.id)
                                .where(cart_table.c.user_id == user))
     temp = [_ for _ in res]
     result = []
     for t in temp:
-        id, *other = t
+        id, *other, number = t
         tea = TeaData(*other)
+        tea.number = number
         td = tea.create_dict_from_task()
         td['id'] = id
         result.append(td)
@@ -28,4 +29,6 @@ def __add_to_cart__(tea_id: int, count: int, user_id: str):
         return None
 
     cart = create_cart(tea_id, count, user_id)
+    print("cart tea_id", tea_id)
+    print("cart tea_count", count)
     return add_cart(cart)

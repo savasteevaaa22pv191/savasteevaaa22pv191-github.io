@@ -8,31 +8,21 @@ import Order from "./components/Order/Order";
 import './CartPage.css'
 import Menu from "./components/Menu/Menu";
 import tea from "../../models/Tea";
-
-interface Order {
-    name: string,
-    image: string,
-    count: number,
-    price: number
-}
+import OrderTea from "../../models/OrderTea";
+import CatalogOrder from "./components/CatalogOrder/CatalogOrder";
 
 
 function CartPage() {
     const navigate: NavigateFunction = useNavigate();
-    const [teas, setTeas] = React.useState<Tea[]>([]);
-    const order: Order = {
-        name: "Шалинь",
-        image: "",
-        count: 5,
-        price: 100
-    }
+    const [orders, setOrders] = React.useState<OrderTea[]>([]);
 
     React.useEffect(() => {
 
             const get_teas_from_cart = async () => {
-                const teasData: Tea[] | null = await getTeasFromCart(localStorage.getItem("token"));
+                const teasData: OrderTea[] | null = await getTeasFromCart(localStorage.getItem("token"));
                 if (teasData !== null) {
-                    setTeas(teasData)
+                    console.log(teasData)
+                    setOrders(teasData)
                 } else {
                     navigate('/login')
                 }
@@ -48,7 +38,7 @@ function CartPage() {
         <>
             <Header/>
 
-            <div className="col-12">
+            <div className="col-12 content">
                 <div className="product-title">
                     <div>Корзина</div>
                 </div>
@@ -56,13 +46,10 @@ function CartPage() {
                     <Menu/>
 
                     <div className="">
-                        <Order order={order}/>
+                        <CatalogOrder data={orders}/>
                     </div>
                 </div>
             </div>
-
-            <Footer/>
-
         </>
     );
 }

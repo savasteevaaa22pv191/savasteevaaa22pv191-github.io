@@ -17,7 +17,7 @@ function TopNavbar() {
         <>
             <nav className="nav navbar-expand-lg container top-navbar">
                 <div className="navbar-brand img-wrap">
-                    <img src={logo}/>
+                    <img className="img-icon" src={logo} onClick={event => navigate('/')}/>
                 </div>
 
                 <div className="col-md-5 col-lg-5 search-wrap search">
