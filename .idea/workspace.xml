@@ -1,19 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8001d63c-d18f-4efa-8366-bb60ea6d8b20" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/lab1/teaShop/html/authorization.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/teaShop/authorization.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab1/teaShop/html/content.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/teaShop/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab1/teaShop/html/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/teaShop/product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab1/teaShop/my-css/authorization.css" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/teaShop/my-css/authorization.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab1/teaShop/my-css/content.css" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/teaShop/my-css/index.css" afterDir="false" />
+    <list default="true" id="8001d63c-d18f-4efa-8366-bb60ea6d8b20" name="Changes" comment="minor fixes">
+      <change beforePath="$PROJECT_DIR$/lab4/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -30,10 +43,23 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/wandererindark/WebstormProjects/frontend_course",
+    "list.type.of.created.stylesheet": "CSS",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "watcher.settings",
+    "ts.external.directory.path": "/Users/wandererindark/WebstormProjects/frontend_course/lab4/frontend/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lab4/frontend/src/pages/ProductPage/components" />
+      <recent name="$PROJECT_DIR$/lab4/frontend/src/pages/Home/components" />
+      <recent name="$PROJECT_DIR$/lab4/frontend/src/pages/Home" />
+      <recent name="$PROJECT_DIR$/lab4/frontend/src/pages/Signup/components/Form" />
+      <recent name="$PROJECT_DIR$/lab4/frontend/src/pages/Login/components" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -44,7 +70,95 @@
       <updated>1665141812341</updated>
       <workItem from="1665141818834" duration="15000" />
       <workItem from="1665164760145" duration="89000" />
+      <workItem from="1667934183004" duration="1251000" />
+      <workItem from="1667937762610" duration="696000" />
+      <workItem from="1667993323881" duration="1286000" />
+      <workItem from="1667999432119" duration="471000" />
+      <workItem from="1670672664376" duration="22712000" />
+      <workItem from="1670756300663" duration="4638000" />
+      <workItem from="1670778134990" duration="550000" />
+      <workItem from="1670841135757" duration="13033000" />
+      <workItem from="1670926939618" duration="9245000" />
+      <workItem from="1671032094925" duration="6780000" />
+      <workItem from="1671122409115" duration="164000" />
+      <workItem from="1671122844369" duration="69763000" />
+      <workItem from="1671363391373" duration="13625000" />
+      <workItem from="1671399433959" duration="1640000" />
+      <workItem from="1671403069591" duration="849000" />
+      <workItem from="1671456945690" duration="911000" />
+      <workItem from="1671553830517" duration="2728000" />
     </task>
+    <task id="LOCAL-00001" summary="lab2">
+      <created>1667938447614</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1667938447614</updated>
+    </task>
+    <task id="LOCAL-00002" summary="jwt token">
+      <created>1671140566857</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671140566857</updated>
+    </task>
+    <task id="LOCAL-00003" summary="all teas and registration">
+      <created>1671274999608</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1671274999608</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add to cart api">
+      <created>1671368204948</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1671368204948</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add to cart page">
+      <created>1671399494866</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1671399494867</updated>
+    </task>
+    <task id="LOCAL-00006" summary="minor fixes">
+      <created>1671560006506</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1671560006506</updated>
+    </task>
+    <task id="LOCAL-00007" summary="minor fixes">
+      <created>1671560774860</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1671560774860</updated>
+    </task>
+    <task id="LOCAL-00008" summary="minor fixes">
+      <created>1671560999764</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1671560999764</updated>
+    </task>
+    <task id="LOCAL-00009" summary="minor fixes">
+      <created>1671562124915</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1671562124915</updated>
+    </task>
+    <task id="LOCAL-00010" summary="minor fixes">
+      <created>1671562669873</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1671562669873</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -55,10 +169,31 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="lab2" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="lab2" />
+    <MESSAGE value="jwt token" />
+    <MESSAGE value="all teas and registration" />
+    <MESSAGE value="add to cart api" />
+    <MESSAGE value="add to cart page" />
+    <MESSAGE value="minor fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor fixes" />
   </component>
 </project>

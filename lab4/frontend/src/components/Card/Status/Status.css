@@ -1,0 +1,10 @@
+.check-color {
+    color:green !important;
+}
+
+.status {
+    display: inline-flex;
+    flex-direction: row;
+    margin: 6px 0 0 0;
+    font-size: small;
+}

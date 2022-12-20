@@ -1,0 +1,5 @@
+flask==2.2.2
+sqlalchemy >= 1.4.43
+flask-cors==3.0.10
+psycopg2==2.9.4
+flask-jwt == 0.3.2

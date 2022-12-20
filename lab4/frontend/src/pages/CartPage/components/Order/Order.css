@@ -1,0 +1,22 @@
+.order-box {
+    border-top: 1px solid #c0c0c0;
+    margin: 4px;
+}
+.order-img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+.order-font {
+    color: black;
+    font-weight: bold;
+    font-size: medium;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.order-title-box {
+    align-items: center;
+    display: flex;
+
+}

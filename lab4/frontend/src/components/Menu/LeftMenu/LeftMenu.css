@@ -1,0 +1,25 @@
+.left-panel ul {
+    margin-left: 15px;
+    margin-top: 15px;
+    background-color: rgb(248, 248, 249);
+}
+
+.left-panel ul li div {
+    display: block;
+    padding: 15px 15px;
+    border-top: 1px solid #ddd;
+    border-left: 3px solid transparent;
+    border-right: 1px solid #ddd;
+    font-size: medium;
+    font-family: "Noto Sans Gunjala Gondi", sans-serif;
+}
+
+.left-panel ul li div:last-child {
+    border-bottom: 1px solid #ddd;
+}
+
+.left-panel ul li div:hover {
+    cursor: pointer;
+    border-left: 3px solid #4d2d22;
+    background-color: #fff;
+}
