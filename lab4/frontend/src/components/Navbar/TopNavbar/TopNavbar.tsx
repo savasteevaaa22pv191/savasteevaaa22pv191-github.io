@@ -3,7 +3,7 @@ import logo from '../../../images/brand-icon/tea_logo.png';
 import cart from '../../../images/navbar-icon/cart.svg';
 import heart from '../../../images/navbar-icon/heart.svg';
 import lock from '../../../images/navbar-icon/lock.svg';
-import { useNavigate, NavigateFunction, Link } from "react-router-dom";
+import { useNavigate, NavigateFunction} from "react-router-dom";
 import "./TopNavbar.css"
 
 function TopNavbar() {
@@ -17,7 +17,7 @@ function TopNavbar() {
         <>
             <nav className="nav navbar-expand-lg container top-navbar">
                 <div className="navbar-brand img-wrap">
-                    <img className="img-icon" src={logo} onClick={event => navigate('/')}/>
+                    <img className="img-icon" src={logo} onClick={event => navigate('/')} alt="img"/>
                 </div>
 
                 <div className="col-md-5 col-lg-5 search-wrap search">
@@ -39,13 +39,13 @@ function TopNavbar() {
                         </div>
 
                         <div className="col-6 d-flex flex-row justify-content-around">
-                            <img className="img-icon" src={lock} onClick={event => navigate('/login')}/>
+                            <img className="img-icon" src={lock} onClick={event => navigate('/login')} alt="img"/>
 
 
-                            <img className="img-icon" src={heart}/>
+                            <img className="img-icon" src={heart} alt="img"/>
 
 
-                            <img className="img-icon" src={cart} onClick={event => navigate(linkToCart)}/>
+                            <img className="img-icon" src={cart} onClick={event => navigate(linkToCart)} alt="img"/>
 
                         </div>
                     </div>

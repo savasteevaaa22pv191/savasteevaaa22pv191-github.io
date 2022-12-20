@@ -1,13 +1,9 @@
 import React from "react";
-import {useNavigate, NavigateFunction, Link} from "react-router-dom";
+import {useNavigate, NavigateFunction} from "react-router-dom";
 import Header from "../../components/Main/Header/Header";
-import Footer from "../../components/Main/Footer/Footer";
-import Tea from "../../models/Tea";
 import {getTeasFromCart} from "../../api/cartApi";
-import Order from "./components/Order/Order";
 import './CartPage.css'
 import Menu from "./components/Menu/Menu";
-import tea from "../../models/Tea";
 import OrderTea from "../../models/OrderTea";
 import CatalogOrder from "./components/CatalogOrder/CatalogOrder";
 
@@ -30,7 +26,7 @@ function CartPage() {
             }
             get_teas_from_cart()
         },
-
+        // eslint-disable-next-line
         []
     );
 

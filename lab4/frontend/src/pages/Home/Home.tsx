@@ -4,15 +4,12 @@ import LeftMenu from "../../components/Menu/LeftMenu/LeftMenu";
 import HomePresent from "./components/HomePresent/HomePresent";
 import CatalogImgCard from "./components/CatalogImgCard/CatalogImgCard";
 import TopMenu from "./components/TopMenu/TopMenu";
-import {Simulate} from "react-dom/test-utils";
-import contextMenu = Simulate.contextMenu;
 import Tea from "../../models/Tea";
 import {getTeas} from "../../api/productApi";
 import CatalogProduct from "./components/CatalogProduct/CatalogProduct";
 import Footer from "../../components/Main/Footer/Footer";
 
 function Home() {
-    const basePath = '../../images/product-icon/'
     const [teas, setTeas] = React.useState<Tea[]>([]);
 
     console.log(teas)

@@ -1,16 +1,10 @@
-import React, {useState} from "react";
-import {useNavigate, NavigateFunction, Link} from "react-router-dom";
+import React from "react";
 import './Product.css'
-import image from '../../../../images/product-icon-full/tovar1.jpg'
 import Rating from "../../../../components/Card/Rating/Rating";
 import Status from "../../../../components/Card/Status/Status";
 import Counter from "../Counter/Counter";
-import {authentication} from "../../../../api/authApi";
 
 function Product(props: any) {
-    const basePath = '../../../images/product-icon/'
-    const navigate: NavigateFunction = useNavigate();
-    const [count, setCount] = useState(1);
 
     return (
         <>
@@ -19,7 +13,7 @@ function Product(props: any) {
 
                     <div className="d-flex col-lg-6 col-md-12 col-sm-12 col-xs-12">
                         <div className="test-wrap d-flex justify-content-center align-items-center product-image">
-                            <img src={require(`../../../../images/product-icon-full/${props.tea.image}.jpeg`)}/>
+                            <img src={require(`../../../../images/product-icon-full/${props.tea.image}.jpeg`)} alt="img"/>
                         </div>
                     </div>
 

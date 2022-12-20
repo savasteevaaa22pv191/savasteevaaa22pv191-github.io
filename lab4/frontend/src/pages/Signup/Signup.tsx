@@ -5,8 +5,6 @@ import './Signup.css'
 import Form from "./components/Form/Form";
 import {NavigateFunction, useNavigate} from "react-router-dom";
 import {authentication, registration} from "../../api/authApi";
-import Tea from "../../models/Tea";
-import {getTeas} from "../../api/productApi";
 
 interface User {
     access_token: string
@@ -41,7 +39,7 @@ function Signup() {
             }
             auth()
         },
-
+        // eslint-disable-next-line
         [regRes]
     );
 
@@ -76,7 +74,7 @@ function Signup() {
         <>
             <div className="d-flex row col-12">
                 <div className="col-lg-6 col-md-6 d-sm-none d-none d-md-block d-lg-block">
-                    <img className="img-signup" src={image}/>
+                    <img className="img-signup" src={image} alt="img"/>
                 </div>
 
                 <div className="col-lg-6 col-md-6 col-sm-12 d-flex">

@@ -1,12 +1,12 @@
 import React from "react";
 import './ProductPage.css'
-import {useNavigate, NavigateFunction, Link, useLocation} from "react-router-dom";
+import {useNavigate, NavigateFunction, useLocation} from "react-router-dom";
 import LeftMenu from "../../components/Menu/LeftMenu/LeftMenu";
 import Description from "./components/Description/Description";
 import Header from "../../components/Main/Header/Header";
 import Footer from "../../components/Main/Footer/Footer";
 import Product from "./components/Product/Product";
-import {addToCart, getTeasFromCart} from "../../api/cartApi";
+import {addToCart} from "../../api/cartApi";
 
 interface CounterParams {
     count: number,

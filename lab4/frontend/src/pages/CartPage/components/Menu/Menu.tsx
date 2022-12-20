@@ -1,10 +1,7 @@
 import React from "react";
-import {Link, NavigateFunction, useNavigate} from "react-router-dom";
 import './Menu.css'
-import image from '../../../../images/product-icon/tovar1.jpg'
 
-function Menu(order: any) {
-    const navigate: NavigateFunction = useNavigate();
+function Menu() {
 
     return (
         <>
@@ -17,19 +14,19 @@ function Menu(order: any) {
 
                     <div className=" col-2 item">
                         <div className="d-flex flex-column col-2">
-                            <a>Цена</a>
+                            Цена
                         </div>
                     </div>
 
                     <div className="col-2 item">
                         <div className="d-flex flex-column col-2">
-                            <a>Количество</a>
+                            Количество
                         </div>
                     </div>
 
                     <div className="col-2 item">
                         <div className="d-flex flex-column col-2">
-                            <a>Сумма</a>
+                            Сумма
                         </div>
                     </div>
                 </div>

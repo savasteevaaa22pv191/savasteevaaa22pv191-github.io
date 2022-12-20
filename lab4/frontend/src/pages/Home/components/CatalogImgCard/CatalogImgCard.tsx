@@ -16,21 +16,21 @@ function CatalogImgCard() {
                     <div className="middle-block d-flex flex-row col-12 flex-wrap">
                         <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                             <div className="back-img">
-                                <img src={trava}/>
+                                <img src={trava} alt="img"/>
                                     <div className="caption">Травы и иван-чай</div>
                             </div>
                         </div>
 
                         <div className="col-lg-3 col-md-6 col-sm-6 col-xs-6">
                             <div className="back-img">
-                                <img src={ulun}/>
+                                <img src={ulun} alt="img"/>
                                     <div className="caption">Улуны</div>
                             </div>
                         </div>
 
                         <div className="col-lg-3 col-md-6 col-sm-6 col-xs-6">
                             <div className="back-img">
-                                <img src={coffee}/>
+                                <img src={coffee} alt="img"/>
                                     <div className="caption">Кофе</div>
                             </div>
                         </div>
@@ -38,21 +38,21 @@ function CatalogImgCard() {
 
                         <div className="col-lg-3 col-md-6 col-sm-6 col-xs-6">
                             <div className="back-img">
-                                <img src={tea}/>
+                                <img src={tea} alt="img"/>
                                     <div className="caption">Зеленый чай</div>
                             </div>
                         </div>
 
                         <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                             <div className="back-img">
-                                <img src={tea_with_dopant}/>
+                                <img src={tea_with_dopant} alt="img"/>
                                     <div className="caption">Чай с добавками</div>
                             </div>
                         </div>
 
                         <div className="col-lg-3 col-md-6 col-sm-6 col-xs-6">
                             <div className="back-img">
-                                <img src={present}/>
+                                <img src={present} alt="img"/>
                                     <div className="caption">Подарки</div>
                             </div>
                         </div>

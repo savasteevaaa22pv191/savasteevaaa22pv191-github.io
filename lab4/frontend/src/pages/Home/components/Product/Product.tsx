@@ -1,6 +1,6 @@
 import React from "react";
 import Tea from "../../../../models/Tea";
-import {Link, NavigateFunction, useNavigate} from "react-router-dom";
+import {NavigateFunction, useNavigate} from "react-router-dom";
 import './Product.css'
 import Rating from "../../../../components/Card/Rating/Rating";
 import Status from "../../../../components/Card/Status/Status";
@@ -18,7 +18,7 @@ function Product(tea: Tea) {
                 })}>
                 <div className="product-box justify-content-center">
                     <div className="d-inline-flex">
-                        <img src={require(`../../../../images/product-icon/${tea.image}.jpg`)}/>
+                        <img src={require(`../../../../images/product-icon/${tea.image}.jpg`)} alt="img"/>
                     </div>
 
                     <div className="d-inline-flex text-box">

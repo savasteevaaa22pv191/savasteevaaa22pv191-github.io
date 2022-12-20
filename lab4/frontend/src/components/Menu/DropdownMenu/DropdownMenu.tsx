@@ -19,7 +19,7 @@ function DropdownMenu() {
 
                         <li className="d-flex flex-row col-4 justify-content-center">
                             <div>
-                                <img src={gift}/>
+                                <img src={gift} alt="img"/>
                             </div>
 
                             <div className="item-text d-flex flex-column">
@@ -33,7 +33,7 @@ function DropdownMenu() {
 
                         <li className="d-flex flex-row col-4 justify-content-center">
                             <div>
-                                <img src={tea}/>
+                                <img src={tea} alt="img"/>
                             </div>
 
                             <div className="item-text d-flex flex-column">
@@ -51,7 +51,7 @@ function DropdownMenu() {
 
                         <li className="d-flex flex-row col-4 justify-content-center">
                             <div>
-                                <img src={planttea}/>
+                                <img src={planttea} alt="img"/>
                             </div>
 
                             <div className="item-text d-flex flex-column">
@@ -69,7 +69,7 @@ function DropdownMenu() {
 
                         <li className="d-flex flex-row col-4 justify-content-center">
                             <div>
-                                <img src={trava}/>
+                                <img src={trava} alt="img"/>
                             </div>
 
                             <div className="item-text d-flex flex-column">
@@ -79,7 +79,7 @@ function DropdownMenu() {
 
                         <li className="d-flex flex-row col-4 justify-content-center">
                             <div>
-                                <img src={coffee}/>
+                                <img src={coffee} alt="img"/>
                             </div>
 
                             <div className="item-text d-flex flex-column">
@@ -94,7 +94,7 @@ function DropdownMenu() {
 
                         <li className="d-flex flex-row col-4 justify-content-center">
                             <div>
-                                <img src={sladosti}/>
+                                <img src={sladosti} alt="img"/>
                             </div>
 
                             <div className="item-text d-flex flex-column">
@@ -104,7 +104,7 @@ function DropdownMenu() {
 
                         <li className="d-flex flex-row col-4 justify-content-center">
                             <div>
-                                <img src={sirop}/>
+                                <img src={sirop} alt="img"/>
                             </div>
 
                             <div className="item-text d-flex flex-column">
@@ -114,7 +114,7 @@ function DropdownMenu() {
 
                         <li className="d-flex flex-row col-4 justify-content-center">
                             <div>
-                                <img src={posuda}/>
+                                <img src={posuda} alt="img"/>
                             </div>
 
                             <div className="item-text d-flex flex-column">

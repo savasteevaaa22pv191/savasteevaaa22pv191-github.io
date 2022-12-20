@@ -5,7 +5,6 @@ import Form from "./components/Form/Form";
 import './Login.css'
 import {NavigateFunction, useNavigate} from "react-router-dom";
 import {authentication} from "../../api/authApi";
-import {Errors} from "./Errors";
 
 interface User {
     access_token: string
@@ -81,7 +80,7 @@ function Login() {
         <>
             <div className="d-flex row col-lg-12 col-md-12 col-sm-12">
                 <div className="col-lg-6 col-md-6 d-sm-none d-none d-md-block d-lg-block">
-                    <img className="img-login" src={image}/>
+                    <img className="img-login" src={image} alt="img"/>
                 </div>
 
                 <div className="col-lg-6 col-md-6 col-sm-12 d-flex ">

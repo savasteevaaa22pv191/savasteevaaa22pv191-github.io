@@ -14,33 +14,33 @@ function CatalogNavbar() {
                 <div className="collapse navbar-collapse" id="#navbarSupportedContent">
                     <ul className="navbar-nav justify-content-between container">
                         <li className="nav-item dropdown col-2">
-                            <a className="nav-link dropdown-toggle" href="#" id="dropdownCatalog" role="button"
+                            <div className="nav-link dropdown-toggle" id="dropdownCatalog" role="button"
                                data-bs-toggle="dropdown" aria-expanded="false">
                                 Каталог
-                            </a>
+                            </div>
 
                             <DropdownMenu/>
 
                         </li>
 
                         <li className="nav-item">
-                            <a className="nav-link menu-text" href="#">О компании</a>
+                            <div className="nav-link menu-text">О компании</div>
                         </li>
 
                         <li className="nav-item">
-                            <a className="nav-link menu-text" href="#">Акции</a>
+                            <div className="nav-link menu-text" >Акции</div>
                         </li>
 
                         <li className="nav-item">
-                            <a className="nav-link menu-text" href="#">Корпоративные подарки</a>
+                            <div className="nav-link menu-text">Корпоративные подарки</div>
                         </li>
 
                         <li className="nav-item">
-                            <a className="nav-link menu-text" href="#">Заказ и доставка</a>
+                            <div className="nav-link menu-text">Заказ и доставка</div>
                         </li>
 
                         <li className="nav-item dropdown">
-                            <a className="nav-link menu-text" href="#">Оптовикам</a>
+                            <div className="nav-link menu-text">Оптовикам</div>
                         </li>
                     </ul>
                 </div>

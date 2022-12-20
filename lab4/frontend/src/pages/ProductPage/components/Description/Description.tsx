@@ -1,10 +1,8 @@
 import React from "react";
-import {useNavigate, NavigateFunction, Link} from "react-router-dom";
 import './Description.css'
 
 
 function Description(props: any) {
-    const navigate: NavigateFunction = useNavigate();
 
     return (
         <>
