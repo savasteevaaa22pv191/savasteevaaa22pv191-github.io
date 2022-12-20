@@ -21,7 +21,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: copy lock
-        run: cp package-lock.json ../package-lock.json
+        run: cp package-lock.json ../../package-lock.json
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
@@ -44,9 +44,9 @@ jobs:
           token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
           repository: ${{ github.repository }}
         run: |
-          cd ../
+          cd ../../
           git config --global user.name user_name
           git config --global user.email user_email
           git remote set-url origin https://${user_name}:${token}@github.com/${repository}
-          cd lab4/frontend
+          cd lab4/frontend/
           npm run deploy
