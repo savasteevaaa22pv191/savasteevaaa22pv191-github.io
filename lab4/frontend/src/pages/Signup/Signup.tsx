@@ -2,7 +2,7 @@
 import React from "react";
 import image from '../../images/brand-icon/signup.jpg'
 import './Signup.css'
-import SignupForm from "../../components/SignupForm/SignupForm";
+import Form from "./components/Form/Form";
 import {NavigateFunction, useNavigate} from "react-router-dom";
 import {authentication, registration} from "../../api/authApi";
 import Tea from "../../models/Tea";
@@ -17,7 +17,6 @@ function Signup() {
     const [email, setEmail] = React.useState<string>('');
     const [password, setPassword] = React.useState<string>('');
     const [login, setLogin] = React.useState<string>('');
-    const [errors, setErrors] = React.useState<string>('');
     const [regRes, setRegRes] = React.useState<boolean>(false);
     const [user, setUser] = React.useState<User>({ access_token: ''});
 
@@ -64,16 +63,6 @@ function Signup() {
     const handleSubmit = async (event: any) => {
         event.preventDefault()
 
-        /*for (let errorsKey in errors) {
-            errors.set(errorsKey, '')
-        }
-        if (email.trim().length === 0) {
-            errors.set(email, 'Заполните Email.')
-        }
-        if (password.trim().length === 0) {
-            errors.set(password, 'Заполните Пароль.')
-        }*/
-
         if (email !== '' && password !== '' && login !=='') {
             const result: boolean|null = await registration(email, password, login);
             if(result !== null){
@@ -94,7 +83,7 @@ function Signup() {
                     <div className="col-12 d-flex flex-column justify-content-center align-items-center">
                         <div className="title-signup">Регистрация</div>
 
-                        <SignupForm click={handleSubmit} email={handleEmail} password={handlePassword} login={handleLogin}/>
+                        <Form click={handleSubmit} email={handleEmail} password={handlePassword} login={handleLogin}/>
 
                         <div className="registration-block">
                             Уже есть аккаунт?

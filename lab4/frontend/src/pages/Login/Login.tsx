@@ -26,7 +26,6 @@ function Login() {
             ["password", false]
         ]);
     const [errors, setErrors] = React.useState<Map<string, boolean>>(er);
-    const [errors_, setErrors_] = React.useState<Errors>({passwordHasError:false, emailHasError:false});
 
     const [user, setUser] = React.useState<User>({ access_token: ''});
     const params: LoginParams = {
@@ -48,7 +47,6 @@ function Login() {
 
 
     const handleSubmit = async (event: any) => {
-        console.log("Я умираю")
         event.preventDefault()
 
         for (let errorsKey in errors) {
@@ -57,10 +55,8 @@ function Login() {
         if (email.trim().length === 0) {
 
             setErrors(errors.set('email', true))
-            console.log(errors)
         }
         if (password.trim().length === 0) {
-            console.log(errors.get("password"))
             setErrors(errors.set('password', true))
         }
 

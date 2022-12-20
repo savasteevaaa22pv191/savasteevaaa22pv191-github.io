@@ -2,13 +2,13 @@ import React from "react";
 import Header from '../../components/Main/Header/Header';
 import LeftMenu from "../../components/Menu/LeftMenu/LeftMenu";
 import HomePresent from "./components/HomePresent/HomePresent";
-import CatalogImgCard from "../../components/Catalog/CatalogImgCard/CatalogImgCard";
-import TopMenu from "../../components/Menu/TopMenu/TopMenu";
+import CatalogImgCard from "./components/CatalogImgCard/CatalogImgCard";
+import TopMenu from "./components/TopMenu/TopMenu";
 import {Simulate} from "react-dom/test-utils";
 import contextMenu = Simulate.contextMenu;
 import Tea from "../../models/Tea";
 import {getTeas} from "../../api/productApi";
-import CatalogProduct from "../../components/Catalog/CatalogProduct/CatalogProduct";
+import CatalogProduct from "./components/CatalogProduct/CatalogProduct";
 import Footer from "../../components/Main/Footer/Footer";
 
 function Home() {

@@ -4,7 +4,7 @@ import './Product.css'
 import image from '../../../../images/product-icon-full/tovar1.jpg'
 import Rating from "../../../../components/Card/Rating/Rating";
 import Status from "../../../../components/Card/Status/Status";
-import Counter from "../../../../components/Card/Counter/Counter";
+import Counter from "../Counter/Counter";
 import {authentication} from "../../../../api/authApi";
 
 function Product(props: any) {
