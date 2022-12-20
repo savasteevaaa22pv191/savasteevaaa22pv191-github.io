@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8001d63c-d18f-4efa-8366-bb60ea6d8b20" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/frontend/src/components/Main/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/src/components/Main/Header/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/frontend/src/components/Menu/LeftMenu/LeftMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/src/components/Menu/LeftMenu/LeftMenu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/frontend/src/components/Navbar/CatalogNavbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/src/components/Navbar/CatalogNavbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/frontend/src/components/Navbar/TopNavbar/TopNavbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/src/components/Navbar/TopNavbar/TopNavbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/frontend/src/pages/CartPage/CartPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/src/pages/CartPage/CartPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/frontend/src/pages/CartPage/components/Menu/Menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/src/pages/CartPage/components/Menu/Menu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/frontend/src/pages/CartPage/components/Order/Order.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/src/pages/CartPage/components/Order/Order.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/frontend/src/pages/Home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/src/pages/Home/Home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/frontend/src/pages/Home/components/CatalogImgCard/CatalogImgCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/src/pages/Home/components/CatalogImgCard/CatalogImgCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/frontend/src/pages/Home/components/HomePresent/HomePresent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/src/pages/Home/components/HomePresent/HomePresent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/frontend/src/pages/Home/components/Product/Product.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/src/pages/Home/components/Product/Product.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/frontend/src/pages/Login/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/src/pages/Login/Login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/frontend/src/pages/ProductPage/ProductPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/src/pages/ProductPage/ProductPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/frontend/src/pages/ProductPage/components/Counter/Counter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/src/pages/ProductPage/components/Counter/Counter.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/frontend/src/pages/ProductPage/components/Description/Description.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/src/pages/ProductPage/components/Description/Description.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/frontend/src/pages/ProductPage/components/Product/Product.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/src/pages/ProductPage/components/Product/Product.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/frontend/src/pages/Signup/Signup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/src/pages/Signup/Signup.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/frontend/src/pages/Signup/components/Form/Form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/src/pages/Signup/components/Form/Form.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="8001d63c-d18f-4efa-8366-bb60ea6d8b20" name="Changes" comment="minor fixes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -141,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671399494867</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="minor fixes">
+      <created>1671560006506</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1671560006506</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,6 +163,7 @@
     <MESSAGE value="all teas and registration" />
     <MESSAGE value="add to cart api" />
     <MESSAGE value="add to cart page" />
-    <option name="LAST_COMMIT_MESSAGE" value="add to cart page" />
+    <MESSAGE value="minor fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor fixes" />
   </component>
 </project>
