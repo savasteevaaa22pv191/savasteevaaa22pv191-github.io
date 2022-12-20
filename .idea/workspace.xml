@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8001d63c-d18f-4efa-8366-bb60ea6d8b20" name="Changes" comment="minor fixes" />
+    <list default="true" id="8001d63c-d18f-4efa-8366-bb60ea6d8b20" name="Changes" comment="minor fixes">
+      <change beforePath="$PROJECT_DIR$/lab4/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/frontend/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -149,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671562124915</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="minor fixes">
+      <created>1671562669873</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1671562669873</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
