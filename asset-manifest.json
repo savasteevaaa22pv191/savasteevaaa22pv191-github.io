@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.319a2eba.css",
+    "main.js": "/static/js/main.aba99949.js",
+    "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
+    "static/media/signup.jpg": "/static/media/signup.469bce883775c7544b78.jpg",
+    "static/media/tea-with-dopant.jpg": "/static/media/tea-with-dopant.6b0dbcb014471659b83b.jpg",
+    "static/media/present.jpg": "/static/media/present.78c1850b3b8c85e4f609.jpg",
+    "static/media/tea.jpg": "/static/media/tea.b087527ecca798c7f9a7.jpg",
+    "static/media/trava.jpg": "/static/media/trava.c49cdf8de71aba0e51eb.jpg",
+    "static/media/coffe.jpg": "/static/media/coffe.562a09b9a989035a76ab.jpg",
+    "static/media/ulun.jpg": "/static/media/ulun.ef7db457ec53aa0344c4.jpg",
+    "static/media/tea_logo.png": "/static/media/tea_logo.8f3183d19ce26f6fc2c0.png",
+    "static/media/tea-banner.jpg": "/static/media/tea-banner.8d817f18ef77c2d1d880.jpg",
+    "static/media/login.jpg": "/static/media/login.29c6fc18333cd75b4d2f.jpg",
+    "static/media/tovar2.jpeg": "/static/media/tovar2.16ec2394f4200e20d95a.jpeg",
+    "static/media/tovar3.jpeg": "/static/media/tovar3.307b0fd61a6202829e31.jpeg",
+    "static/media/tovar1.jpeg": "/static/media/tovar1.51425ec4e7c22e2cd2c9.jpeg",
+    "index.html": "/index.html",
+    "static/media/heart.svg": "/static/media/heart.27cf625b15dd614828adb40336c2e861.svg",
+    "static/media/cart.svg": "/static/media/cart.05dfd14f0943edf68c9a30788565c795.svg",
+    "static/media/lock.svg": "/static/media/lock.9c682a8caa8ceb8b9599bb8fa7c6a59a.svg",
+    "main.319a2eba.css.map": "/static/css/main.319a2eba.css.map",
+    "main.aba99949.js.map": "/static/js/main.aba99949.js.map",
+    "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.319a2eba.css",
+    "static/js/main.aba99949.js"
+  ]
+}
